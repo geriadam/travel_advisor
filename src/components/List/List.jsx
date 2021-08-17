@@ -11,22 +11,10 @@ import {
 import useStyles from './styles';
 import PlaceDetails from '../PlaceDetails/PlaceDetails.jsx';
 
-const List = () => {
+const List = ({ places }) => {
     const classes = useStyles();
     const [type, setType] = useState('restaurants');
     const [rating, setRating] = useState('');
-    const places = [
-        {name: 'Place 1'},
-        {name: 'Place 2'},
-        {name: 'Place 3'},
-        {name: 'Place 4'},
-        {name: 'Place 5'},
-        {name: 'Place 6'},
-        {name: 'Place 7'},
-        {name: 'Place 8'},
-        {name: 'Place 9'},
-        {name: 'Place 10'},
-    ];
     return (
         <div className={classes.container}>
             <Typography variant="h4">
